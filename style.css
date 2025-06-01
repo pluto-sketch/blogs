@@ -1,48 +1,47 @@
-/* Reset some browser styles */
-font-family: "Fira Code", monospace;
-
-body,
-h1,
-p,
-ul,
-li,
-a {
+/* Base Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set base styles */
+/* Body Styling */
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #121212;
+    font-family: "Fira Code", monospace;
+    background: linear-gradient(135deg, #1e1e1e, #0d0d0d) !important;
     color: #e0e0e0;
     padding: 2rem;
     max-width: 800px;
     margin: auto;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
+/* Header */
 h1 {
     color: #ff6f61;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
+/* Paragraph */
 p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
+/* List */
 ul {
     list-style: none;
     margin-top: 1rem;
 }
 
+/* List Item */
 li {
     margin-bottom: 1rem;
 }
 
+/* Link Styling */
 a {
     color: #00ffd5;
     text-decoration: none;
@@ -54,7 +53,8 @@ a:hover {
     color: #ff6f61;
 }
 
-/* Optional spice: center links with some flair */
+/* Add Some Fun Emoji Before Links */
 ul li::before {
     content: "💀 ";
+    margin-right: 0.5rem;
 }
